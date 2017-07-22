@@ -21,3 +21,21 @@ pkg_new <- pkg_list[!(pkg_list %in% installed.packages()[,"Package"])]
 if(length(pkg_new)) install.packages(pkg_new)
 rm(pkg_new, pkg_list)
 ```
+
+## shiny-server
+```shell=
+apt-get install gdebi-core
+wget https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.5.3.838-amd64.deb
+gdebi shiny-server-1.5.3.838-amd64.deb
+service status shiny-server
+
+## 修改設定擋
+vim /etc/shiny-server/shiny-server.conf
+## 預設置放目錄
+cd /srv/shiny-server/
+```
+
+
+## rstudio-server
+```R=
+```
