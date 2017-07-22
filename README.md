@@ -1,1 +1,1 @@
-# DigitalServer
+# Server Setting for analysis
