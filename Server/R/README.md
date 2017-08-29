@@ -37,5 +37,16 @@ cd /srv/shiny-server/
 
 
 ## rstudio-server
+
+### status check
 ```R=
+rstudio-server status
+rstudio-server  start
+rstudio-server  stop
+rstudio-server  restart
+```
+### user account
+
+```R=
+useradd -m -d /home/<username> <username>
 ```
